@@ -1,0 +1,78 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  body { font-family: 'Segoe UI', sans-serif; background: #f0fdf4; padding: 20px; color: #1a1a1a; }
+  h1 { color: #15803d; font-size: 1.3rem; margin-bottom: 4px; }
+  .sub { color: #555; font-size: 0.85rem; margin-bottom: 20px; }
+  .card { background: white; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; border-left: 4px solid #22c55e; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+  .title { font-weight: 700; font-size: 0.95rem; color: #166534; }
+  .topic { font-size: 0.8rem; color: #555; margin: 2px 0 6px; }
+  a { color: #2563eb; font-size: 0.82rem; word-break: break-all; }
+  .step { background: #1e3a5f; color: white; border-radius: 10px; padding: 16px 20px; margin-top: 16px; }
+  .step h2 { color: #93c5fd; font-size: 0.95rem; margin: 0 0 10px; }
+  code { background: #1e40af; padding: 3px 8px; border-radius: 4px; font-size: 0.82rem; }
+  .badge { background: #dcfce7; color: #15803d; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; margin-left: 8px; }
+</style>
+</head>
+<body>
+<h1>📚 Free Agriculture PDFs — Add to Knowledge Base</h1>
+<p class="sub">Download and place in <strong>backend/ingestion/sources/</strong> then re-run ingestion</p>
+
+<div class="card">
+  <div class="title">FAO — Rice Production Guide <span class="badge">Recommended</span></div>
+  <div class="topic">Rice varieties, planting, irrigation, diseases, harvesting</div>
+  <a href="https://www.fao.org/3/i2246e/i2246e.pdf" target="_blank">https://www.fao.org/3/i2246e/i2246e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Wheat Production Guide <span class="badge">Recommended</span></div>
+  <div class="topic">Wheat varieties, soil, fertilizer, pests, diseases</div>
+  <a href="https://www.fao.org/3/y4011e/y4011e.pdf" target="_blank">https://www.fao.org/3/y4011e/y4011e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Maize Production Guide <span class="badge">Recommended</span></div>
+  <div class="topic">Maize/corn farming, soil prep, pest control, irrigation</div>
+  <a href="https://www.fao.org/3/y4391e/y4391e.pdf" target="_blank">https://www.fao.org/3/y4391e/y4391e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Tomato Production</div>
+  <div class="topic">Tomato diseases, fertilizers, greenhouse farming</div>
+  <a href="https://www.fao.org/3/i1800e/i1800e.pdf" target="_blank">https://www.fao.org/3/i1800e/i1800e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Crop Water Requirements</div>
+  <div class="topic">Irrigation planning for all major crops</div>
+  <a href="https://www.fao.org/3/s2022e/s2022e.pdf" target="_blank">https://www.fao.org/3/s2022e/s2022e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Fertilizer Use by Crop</div>
+  <div class="topic">NPK recommendations for every major crop worldwide</div>
+  <a href="https://www.fao.org/3/y4393e/y4393e.pdf" target="_blank">https://www.fao.org/3/y4393e/y4393e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Integrated Pest Management</div>
+  <div class="topic">Pest control, organic methods, chemical guidelines</div>
+  <a href="https://www.fao.org/3/i3989e/i3989e.pdf" target="_blank">https://www.fao.org/3/i3989e/i3989e.pdf</a>
+</div>
+
+<div class="card">
+  <div class="title">FAO — Soil Fertility Management</div>
+  <div class="topic">Soil health, composting, organic matter, pH management</div>
+  <a href="https://www.fao.org/3/a-i4405e.pdf" target="_blank">https://www.fao.org/3/a-i4405e.pdf</a>
+</div>
+
+<div class="step">
+  <h2>⚡ After Downloading PDFs — Run This</h2>
+  <p style="font-size:0.85rem;margin:0 0 8px">Place all PDFs in <code>backend/ingestion/sources/</code> then run:</p>
+  <code>python ingestion/ingest.py</code>
+  <p style="font-size:0.82rem;color:#93c5fd;margin:8px 0 0">No --reset needed — it will add new docs to existing knowledge base</p>
+</div>
+</body>
+</html>
